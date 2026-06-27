@@ -16,8 +16,8 @@ import androidx.compose.ui.unit.dp
 fun MainScreen() {
     Scaffold(
         topBar = { TopAppBar(title = { Text("Zen Meditation") }) }
-    ) { padding ->
-        Column(modifier = Modifier.fillMaxSize().padding(padding).padding(16.dp)) {
+    ) { paddingValues ->
+        Column(modifier = Modifier.fillMaxSize().padding(paddingValues).padding(16.dp)) {
             Text(text = "Welcome to Zen Meditation")
         }
     }
